@@ -10,8 +10,8 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .right{display:flex;align-items:center}
 nav a{margin-left:22px;color:#c9d4e3;text-decoration:none;font-size:15px}nav a:hover{color:#fff}
 .lang{margin-left:22px;display:flex;border:1px solid rgba(255,255,255,.25);border-radius:8px;overflow:hidden}
-.lang button{background:none;border:0;color:#c9d4e3;padding:6px 11px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
-.lang button.on{background:var(--teal);color:#06231f}
+.lang a,.lang button{background:none;border:0;color:#c9d4e3;padding:6px 11px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none}
+.lang a.on,.lang button.on{background:var(--teal);color:#06231f}
 .btn{display:inline-block;background:var(--teal);color:#06231f!important;padding:13px 22px;border-radius:9px;text-decoration:none;font-weight:700;transition:transform .2s,box-shadow .2s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(43,179,163,.35)}
 .btn.ghost{background:transparent;color:#fff!important;border:1px solid rgba(255,255,255,.3)}
@@ -143,7 +143,7 @@ a{color:var(--teal)}
 header{background:rgba(251,250,247,.9);border-bottom:1px solid var(--line)}
 .logo{color:var(--ink);text-decoration:none}
 nav a{color:var(--muted)}nav a:hover,nav a.cur{color:var(--ink)}
-.lang{border-color:var(--line)}.lang button{color:var(--muted)}.lang button.on{background:var(--ink);color:#fff}
+.lang{border-color:var(--line)}.lang a,.lang button{color:var(--muted)}.lang a.on,.lang button.on{background:var(--ink);color:#fff}
 .btn{background:var(--ink);color:#fff!important}.btn:hover{box-shadow:0 10px 24px rgba(20,24,31,.16)}
 .btn.ghost{background:transparent;color:var(--ink)!important;border:1px solid #c9c5b9}
 .btn.off{opacity:1;background:#e9e6de;color:var(--muted)!important}
