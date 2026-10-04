@@ -7,6 +7,7 @@
 <title>XHive – ettevõtte mälu</title>
 <link rel='icon' type='image/png' href='logo.png'>
 <link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='demo.css'>
 </head>
 <body data-tet='XHive – ettevõtte mälu' data-ten='XHive – company memory'>
 <header><div class='wrap'><a class='logo' href='#/'><img src='logo.png' alt='XHive'>XHive</a>
@@ -25,15 +26,21 @@
 <div class='cta'><a class='btn' href='#contact'><span class='et'>Räägime 30 minutit</span><span class='en'>Let’s talk for 30 minutes</span></a><a class='btn ghost' href='#how'><span class='et'>Kuidas see käib</span><span class='en'>How it works</span></a></div>
 <div class='meta'><span class='et'>Piloot käib Viru Keskusega</span><span class='en'>Pilot under way with Viru Keskus</span></div>
 </div>
-<div class='sample'>
-<div class='sh'><span><i class='ldot'></i><span class='et'>Teadmiste kaart · väljavõte</span><span class='en'>Knowledge map · extract</span></span><span class='tagx'><span class='et'>Näidis</span><span class='en'>Sample</span></span></div>
-<div class='row'><div><span class='et'>Hindade ja allahindluste reeglid</span><span class='en'>Pricing and discount rules</span><small><span class='et'>Teab müügijuht. Kirjalikke reegleid veel pole.</span><span class='en'>Known by the sales director. No written rules yet.</span></small></div><span class='pill p-a'><span class='et'>Kirja panna kohe</span><span class='en'>Write down now</span></span></div>
-<div class='row'><div><span class='et'>Viie suurima kliendi suhted</span><span class='en'>Top five customer relationships</span><small><span class='et'>Kaks inimest, kumbki teab oma kliente.</span><span class='en'>Two people, each knows their own customers.</span></small></div><span class='pill p-a'><span class='et'>Kirja panna kohe</span><span class='en'>Write down now</span></span></div>
-<div class='row'><div><span class='et'>Tellimuste ümbertõstmine</span><span class='en'>Re-entering orders</span><small><span class='et'>Iga päev käsitsi, samad sammud.</span><span class='en'>Done by hand every day, same steps.</span></small></div><span class='pill p-b'><span class='et'>Automatiseerida</span><span class='en'>Automate</span></span></div>
-<div class='row'><div><span class='et'>Kvaliteedi heakskiit</span><span class='en'>Quality approval</span><small><span class='et'>Kirjas, kaks väljaõppinud asendajat.</span><span class='en'>Written down, two trained deputies.</span></small></div><span class='pill p-g'><span class='et'>Korras</span><span class='en'>In place</span></span></div>
-<div class='sf'><span class='et'>Väljamõeldud näide</span><span class='en'>Illustrative example</span></div>
-</div>
 </div></div>
+<section id='demo'><div class='wrap'>
+<div id="xhive-demo" data-lang="en" lang="en">
+  <div class="pd-top"><span class="pd-brand"><img src="logo.png" alt="" class="pd-logo"> XHive <span class="pd-muted">/ company memory</span></span></div>
+  <div class="pd-cases" aria-label="Choose an example"><button type="button" data-case="knowledge" aria-pressed="true">Could you really switch off?</button><button type="button" data-case="customer" aria-pressed="false">The shortcut nobody talks about</button></div>
+  <div class="pd-steps" aria-label="Process stages"><button type="button" data-stage="0" aria-pressed="true"><span>01</span><b>The conversation</b></button><button type="button" data-stage="1" aria-pressed="false"><span>02</span><b>What it reveals</b></button><button type="button" data-stage="2" aria-pressed="false"><span>03</span><b>What could change</b></button></div>
+  <div class="pd-workspace">
+    <div class="pd-main"><div class="pd-scene-head"><span class="pd-eyebrow" data-label="eyebrow"></span><span class="pd-status"><span class="pd-dot"></span><span data-label="status"></span></span></div><div class="pd-scene" aria-live="off"></div></div>
+    <aside class="pd-aside"><div class="pd-aside-head"><span class="pd-eyebrow" data-label="asideTitle"></span><span class="pd-spark">✳</span></div><div class="pd-insights"></div><div class="pd-aside-bottom"><span class="pd-dot"></span><span data-label="asideBottom"></span></div></aside>
+  </div>
+  <div class="pd-bottom"><div class="pd-caption" aria-live="polite" data-label="caption"></div><div class="pd-controls"><button type="button" class="pd-pause" aria-label="Pause">Ⅱ</button><button type="button" class="pd-replay" aria-label="Replay">↺</button></div></div>
+  <div class="pd-track" aria-hidden="true"><div></div></div>
+  <div class="pd-disclaimer" data-label="disclaimer"></div>
+</div>
+</div></section>
 <div class='trust'><div class='wrap'>
 <span class='it'><span class='et'>Teie nime ja ettevõtet me ilma kirjaliku loata ei maini</span><span class='en'>We don’t mention your name or company without written permission</span></span>
 <span class='it'><span class='et'>AI-pakkujad teie andmetel oma mudeleid ei treeni</span><span class='en'>Third-party models are not trained on your data</span></span>
@@ -186,7 +193,7 @@ function idx(l){[].forEach.call(l,function(c,i){c.style.setProperty('--i',i)})}
 document.querySelectorAll('.stg').forEach(function(p){idx(p.children)});
 document.querySelectorAll('.who2,.ev').forEach(function(p){idx(p.querySelectorAll('tr,.row'))});
 document.querySelectorAll('.evc .big,.ps b').forEach(function(b){var m=b.textContent.trim().match(/^(\d{1,4})(%?)$/);if(m){b.setAttribute('data-n',m[1]);b.setAttribute('data-s',m[2]);}});
-var UNITS='.reveal,.hero2,.sample,#kmap,[data-n]',LOOPS='.sample,#kmap,.ev,.chain,.chat,.stg,[data-n]';
+var UNITS='.reveal,.hero2,#kmap,[data-n]',LOOPS='#kmap,.ev,.chain,.chat,.stg,[data-n]';
 function count(b){var n=+b.getAttribute('data-n'),s=b.getAttribute('data-s'),t0=null,tok=b._k=(b._k||0)+1;function f(t){if(tok!=b._k)return;if(!t0)t0=t;var p=Math.min(1,(t-t0)/1200);p=1-Math.pow(1-p,3);b.textContent=Math.round(n*p)+s;if(p<1)requestAnimationFrame(f);}requestAnimationFrame(f);}
 function done(el){if(el.hasAttribute('data-n'))el.textContent=el.getAttribute('data-n')+el.getAttribute('data-s');else{el.classList.add('show');if(el.id=='kmap')el.classList.add('on');}}
 function reset(el){el._k=(el._k||0)+1;el.classList.add('rs');if(el.hasAttribute('data-n'))el.textContent='0'+el.getAttribute('data-s');else{el.classList.remove('show');el.classList.remove('on');}void el.offsetWidth;el.classList.remove('rs');}
@@ -204,5 +211,6 @@ function show(v){var ok=false;V.forEach(function(x){if(x.getAttribute('data-v')=
 function route(){var hs=location.hash;if(hs.indexOf('#/')==0){show(hs.slice(2)||'home');window.scrollTo(0,0);}else if(hs.length>1&&hs!='#en'&&hs!='#et'){var t=document.getElementById(hs.slice(1));if(t){var p=t.closest('.view');show(p?p.getAttribute('data-v'):'home');t.scrollIntoView();}else show('home');}else show('home');window.dispatchEvent(new Event('resize'));}
 window.addEventListener('hashchange',route);route();})();
 </script>
+<script src="demo.js"></script>
 </body>
 </html>
