@@ -1,5 +1,5 @@
 
-#xhive-demo{--pd-bg:#f3f1eb;--pd-paper:#fbfaf7;--pd-ink:#14181f;--pd-accent:#c55400;--pd-muted:#62686d;--pd-line:#e1e2d9;--pd-soft:#fbeee5;--pd-amber:#8a5b28;--pd-amber-soft:#f4ecdf;box-sizing:border-box;background:var(--pd-bg);color:var(--pd-ink);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;border:1px solid var(--pd-line);border-radius:20px;padding:24px;width:100%;margin:0;overflow:hidden}
+#xhive-demo{--pd-bg:#f4f0e7;--pd-paper:#fbf9f4;--pd-soft:#efe9dc;--pd-navy:#101935;--pd-ink:#101935;--pd-accent:#e8643c;--pd-accent-deep:#b8451f;--pd-muted:#5a6078;--pd-line:#e3ded1;--pd-amber:#b8451f;--pd-amber-soft:#f7e3d9;box-sizing:border-box;background:var(--pd-bg);color:var(--pd-ink);font:14px/1.5 Barlow,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;border:1px solid var(--pd-line);border-radius:0;padding:24px;width:100%;margin:0;overflow:hidden}
 #xhive-demo *{box-sizing:border-box}#xhive-demo button{font:inherit;color:inherit;cursor:pointer}#xhive-demo button:focus-visible{outline:2px solid var(--pd-accent);outline-offset:4px}#xhive-demo .pd-top{display:flex;align-items:center;justify-content:space-between;gap:16px}#xhive-demo .pd-brand{display:flex;gap:8px;align-items:center;font-weight:600}#xhive-demo .pd-muted{color:var(--pd-muted);font-weight:400}#xhive-demo .pd-logo{width:18px;height:18px;border-radius:4px;display:inline-block}#xhive-demo .pd-languages{display:flex;gap:2px}#xhive-demo .pd-languages button{border:0;background:transparent;padding:4px 7px;font-size:11px;color:var(--pd-muted);border-radius:4px}#xhive-demo .pd-languages button[aria-pressed=true]{background:var(--pd-ink);color:var(--pd-paper)}
 #xhive-demo .pd-cases{display:flex;gap:7px;flex-wrap:wrap;margin:24px 0}#xhive-demo .pd-cases button{border:1px solid var(--pd-line);background:transparent;border-radius:20px;padding:7px 14px;font-size:12px}#xhive-demo .pd-cases button[aria-pressed=true]{background:var(--pd-accent);color:var(--pd-paper);border-color:var(--pd-accent)}
 #xhive-demo .pd-steps{display:flex;border-bottom:1px solid var(--pd-line);margin-bottom:20px;gap:24px}#xhive-demo .pd-steps button{display:flex;align-items:center;gap:8px;border:0;background:transparent;padding:0 0 12px;position:relative;color:var(--pd-muted);flex:1;text-align:left}#xhive-demo .pd-steps b{font-weight:500}#xhive-demo .pd-steps span{font-size:11px;font-variant-numeric:tabular-nums}#xhive-demo .pd-steps button:after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--pd-accent);transform:scaleX(0);transform-origin:left;transition:transform .45s}#xhive-demo .pd-steps button[aria-pressed=true]{color:var(--pd-accent)}#xhive-demo .pd-steps button[aria-pressed=true]:after{transform:scaleX(1)}
@@ -89,4 +89,24 @@
 @media(max-width:720px){#xhive-demo .pr-grid{grid-template-columns:1fr;gap:22px}#xhive-demo .pr-panel+.pr-panel{border-left:0;padding-left:0;border-top:1px solid var(--pd-line);padding-top:18px}#xhive-demo .pr-intro{flex-direction:column;gap:10px}#xhive-demo .pr-intro .pd-title{font-size:25px}#xhive-demo .pr-map{height:300px}#xhive-demo .pr-evidence{min-height:0}#xhive-demo .pr-finding{margin-top:16px}#xhive-demo .pr-lane{grid-template-columns:1fr;gap:7px}#xhive-demo .pr-flow-step{padding:9px 6px}#xhive-demo .pr-node{width:82px}#xhive-demo[data-stage="1"] .pd-main,#xhive-demo[data-stage="2"] .pd-main{padding:16px}#xhive-demo .pr-milestone{font-size:10px;padding-right:8px}#xhive-demo .pr-matrix th,#xhive-demo .pr-matrix-note,#xhive-demo .pr-node small{font-size:11px}}
 @media(max-width:400px){#xhive-demo .pr-node{width:74px}}
 @media(prefers-reduced-motion:reduce){#xhive-demo .pr-edge,#xhive-demo .pr-node,#xhive-demo .pr-action-row,#xhive-demo .pr-flow-step{animation:none!important}}
+
+/* xhive brand v1.0 — Barlow, square corners, orange signal */
+#xhive-demo .pd-title{font-family:'Barlow Condensed',Barlow,'Arial Narrow',sans-serif;font-weight:600;line-height:1.08}
+#xhive-demo .pd-title em,#xhive-demo .pd-title i{font-style:normal}
+#xhive-demo .pd-value,#xhive-demo .pr-finding-num{font-family:'Barlow Condensed',Barlow,sans-serif;font-weight:600;line-height:1}
+#xhive-demo,#xhive-demo .pd-main,#xhive-demo .pd-aside,#xhive-demo .pd-cases button,#xhive-demo .pd-note,#xhive-demo .pd-node,#xhive-demo .pd-compare,#xhive-demo .pd-action,#xhive-demo .pd-controls button,#xhive-demo .pd-chain span,#xhive-demo .pd-bubble,#xhive-demo .pr-node,#xhive-demo .pr-flow-step,#xhive-demo .pr-followup,#xhive-demo .pr-tag,#xhive-demo .pr-action-row:before,#xhive-demo .pr-milestone:after{border-radius:0}
+#xhive-demo .pd-cases button[aria-pressed=true],#xhive-demo .pr-node.hub{color:var(--pd-navy);border-color:var(--pd-accent)}
+#xhive-demo .pr-node.hub{box-shadow:none}
+#xhive-demo .pr-node.hub small{color:#f0cbbd}
+#xhive-demo .pd-eyebrow,#xhive-demo .pd-steps button[aria-pressed=true],#xhive-demo .pd-action small,#xhive-demo .pd-round,#xhive-demo .pd-chain span,#xhive-demo .pd-aside-bottom,#xhive-demo .pr-action-row small,#xhive-demo .pr-followup,#xhive-demo .pr-tag.plan,#xhive-demo .pr-action-row:before{color:var(--pd-accent-deep)}
+#xhive-demo mark{background:var(--pd-amber-soft);color:var(--pd-accent-deep)}
+#xhive-demo .pr-edge.risk{stroke:var(--pd-amber)}
+#xhive-demo .pr-state.gap{background:var(--pd-amber)}
+#xhive-demo .pr-edge{stroke:#c3bcb2}
+#xhive-demo .pr-node{border-color:var(--pd-line);background:var(--pd-paper)}
+#xhive-demo .pr-node.proposed{border-color:var(--pd-accent);background:var(--pd-amber-soft)}
+#xhive-demo .pr-evidence{border-left-color:var(--pd-accent)}
+#xhive-demo .pr-milestone:before{background:var(--pd-line)}
+#xhive-demo .pd-aside{border-color:var(--pd-line)}
+#xhive-demo .pd-signal,#xhive-demo .pd-aside-bottom{border-color:var(--pd-line)}
 
