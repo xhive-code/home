@@ -7,10 +7,10 @@ let renderedResultKey="";
 const duration=102000;
 const text={en:{
 brand:'/ company memory',cases:['Could you really switch off?','The shortcut nobody talks about'],steps:['The conversation','What it reveals','What could change'],
-disclaimer:'Fictional backend developer interviews, created to illustrate XHive’s approach.',
+disclaimer:'Fictional backend developer interviews, created to illustrate Xhive’s approach.',
 pause:'Pause',play:'Continue',replay:'Replay',status:['At your own pace','From the conversation','For the team to discuss'],eyebrow:['Alex · Backend developer','Beyond the first answer','Make work easier to hand over'],
 asideTitle:'Behind the answer',asideBottom:['Listen. Pick up the detail. Ask again.','Based on this person’s account','A suggestion to explore together'],
-caption:['Start with a real experience. Give the next answer room to be honest.','The first answer rarely tells the whole story.','An honest conversation becomes a practical place to start.'],ai:'XHive · AI interviewer',person:'Alex · Backend developer',action:'Suggested next step',
+caption:['Start with a real experience. Give the next answer room to be honest.','The first answer rarely tells the whole story.','An honest conversation becomes a practical place to start.'],ai:'Xhive · AI interviewer',person:'Alex · Backend developer',action:'Suggested next step',
 know:{
 q1:'How was your work covered during your last holiday?',
 a1:'Mostly fine. The team took over. I did jump online a couple of times, but nothing major.',
