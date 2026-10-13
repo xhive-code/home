@@ -283,7 +283,7 @@ h2{font-size:clamp(28px,3.6vw,40px);font-weight:800}
 a{color:var(--accent-deep)}
 header{background:rgba(247,245,241,.94);border-bottom:1px solid var(--line)}
 .logo{color:var(--ink);font-weight:600;font-size:26px;letter-spacing:-.01em;gap:6px}
-.logo img{width:24px;height:24px;border-radius:0}
+.logo img{width:96px;height:auto;border-radius:0}
 nav a:not(.xh-btn){color:var(--muted)}nav a:not(.xh-btn):hover,nav a.cur{color:var(--ink)}
 .lang{border-radius:0;border-color:rgba(5,12,38,.25)}
 .lang a,.lang button{color:var(--muted)}
