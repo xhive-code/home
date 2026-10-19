@@ -1,0 +1,4 @@
+(function(){var R=[[2,'Low concentration. Knowledge is reasonably shared.','Review once a year.'],[5,'Moderate. One absence could slow the business noticeably.','Map who knows what in the risky areas.'],[10,'High. One resignation, illness or sale could stall parts of the business.','Start capturing knowledge from the key people now.']];
+document.querySelectorAll('.kpr-calc').forEach(function(c){var bx=c.querySelectorAll('input[type=checkbox]'),out=c.querySelector('.kpr-out');
+function up(){var n=0;bx.forEach(function(b){if(b.checked)n++});var r=R[n<=2?0:n<=5?1:2];out.innerHTML='';var s=document.createElement('b');s.textContent=n+' / 10';var t=document.createElement('span');t.textContent=r[1];var f=document.createElement('small');f.textContent='First step: '+r[2];out.append(s,t,f);}
+bx.forEach(function(b){b.addEventListener('change',up)});up();});})();
