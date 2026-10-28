@@ -60,7 +60,7 @@
 .hero-list li:before{content:'';position:absolute;left:0;top:.5em;width:11px;height:11px;background:var(--accent);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
 .hero2 .lead2{font-size:19px;margin-bottom:0}
 
-/* Hero: bees video; middle sections: light hex pattern; contact: soft honeycomb */
+/* Hero: bees video; How it works: light hex pattern; contact: soft honeycomb */
 .hero2.bgx{position:relative;overflow:hidden;min-height:calc(100vh - 64px);display:flex;align-items:center;padding:96px 0;background:#050C26 url(media/bg-bees2.jpg) center/cover no-repeat}
 .hero2.bgx>.wrap{position:relative;z-index:2;width:100%}
 .hero2.bgx .bgv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 60%;z-index:0}
@@ -70,7 +70,7 @@
 .credit{position:absolute;right:14px;bottom:10px;z-index:3;font-size:11px;color:rgba(255,255,255,.5);text-decoration:none}
 @media(prefers-reduced-motion:reduce){.hero2.bgx .bgv{display:none}}
 @media(max-width:700px){.hero2.bgx{min-height:0;padding:64px 0}.hero2.bgx:after{background:rgba(5,12,38,.8)}}
-section:not(#contact),.trust{background-image:url(media/hex.svg);background-size:56px 97px;background-repeat:repeat}
+#how{background-image:url(media/hex.svg);background-size:56px 97px;background-repeat:repeat}
 #contact.combbg{position:relative;overflow:hidden;background:#050C26 url(media/bg-honeycomb-soft.jpg) center/cover no-repeat}
 #contact.combbg:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,12,38,.9),rgba(5,12,38,.78));z-index:0}
 #contact.combbg>.wrap{position:relative;z-index:1}#contact.combbg .credit{z-index:2}
