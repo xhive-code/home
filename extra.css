@@ -76,3 +76,12 @@
 #contact.combbg>.wrap{position:relative;z-index:1}#contact.combbg .credit{z-index:2}
 /* Login stays reachable when the top nav collapses on phone/tablet */
 .mnav .mlogin{margin-left:auto;color:var(--ink);font-weight:700}
+/* narrative-mock 17.11.2026 */
+#how{padding-bottom:24px}#demo.demo-after{padding-top:24px}#demo.demo-after .xh-link{margin-top:18px}
+.pq{margin:0}.pq figcaption{margin-top:12px;padding-left:27px;font-size:14px;color:var(--muted)}
+.sample-tag{display:inline-block;margin:0 0 22px;padding:4px 10px;border:1px dashed var(--accent-deep,#c55);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#result .chain .card .num{display:block;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+#entry details.more{border:0;padding:12px 0 0;margin-top:12px;border-top:1px solid var(--line)}
+#entry details.more summary{font-size:15px;color:var(--accent-deep,var(--accent))}
+#entry details.more dl{margin:10px 0 0}#entry details.more dt{font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-top:12px;color:var(--ink)}
+#entry details.more dd{margin:4px 0 0;color:var(--muted);font-size:15px}
