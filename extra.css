@@ -85,3 +85,6 @@
 #entry details.more summary{font-size:15px;color:var(--accent-deep,var(--accent))}
 #entry details.more dl{margin:10px 0 0}#entry details.more dt{font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-top:12px;color:var(--ink)}
 #entry details.more dd{margin:4px 0 0;color:var(--muted);font-size:15px}
+
+/* hero-wide 18.11.2026: suurel ekraanil kasvab hero tekstiplokk (päisega sama joon) */
+@media(min-width:1200px){.hero2.bgx .wrap>div:first-child{max-width:960px}.hero2.bgx p{max-width:720px}.hero2.bgx .lead2{font-size:21px}}
